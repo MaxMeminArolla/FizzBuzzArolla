@@ -6,10 +6,20 @@ namespace FizzBuzzArolla
     {
         public static string FizzBuzz(int number)
         {
-            if (number % 3 == 0 && number % 5 == 0) return "FizzBuzz";
-            if (number % 3 == 0) return "Fizz";
-            if (number % 5 == 0) return "Buzz";
+            if (isDivisibleBy3(number) && isDivisibleBy5(number)) return "FizzBuzz";
+            if (isDivisibleBy3(number)) return "Fizz";
+            if (isDivisibleBy5(number)) return "Buzz";
             return number.ToString();
+        }
+
+        private static bool isDivisibleBy3(int number)
+        {
+            return number % 3 == 0;
+        }
+
+        private static bool isDivisibleBy5(int number)
+        {
+            return number % 5 == 0;
         }
     }
 }
