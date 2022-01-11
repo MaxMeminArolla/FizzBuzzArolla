@@ -4,9 +4,9 @@ namespace FizzBuzzArolla
 {
     public class Kata
     {
-        public static bool FizzBuzz(int number)
+        public static string FizzBuzz(int number)
         {
-            return true;
+            return "Fizz";
         }
     }
 }
