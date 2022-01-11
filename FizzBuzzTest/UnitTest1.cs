@@ -17,5 +17,11 @@ namespace FizzBuzzTest
         {
             Assert.Equal("Buzz", Kata.FizzBuzz(5));
         }
+
+        [Fact]
+        public void should_return_FizzBuzz_with_number_15()
+        {
+            Assert.Equal("FizzBuzz", Kata.FizzBuzz(15));
+        }
     }
 }
